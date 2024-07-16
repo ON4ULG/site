@@ -13,7 +13,7 @@ hasCJKLanguage = false
 home = ["HTML"]
 
 [params]
-  header_image = "img/on4ulg.png"
+  header_image = "img/on4ulg.svg"
   SEOTitle = "ON4ULG - Club Radioamateur de l'Université de Liège"
   description = "Site du Club Radioamateur de l'Université de Liège"
   keyword = "ULiège, ULg, ON4ULG, radio, radioamateur, hamradio, SDR"
