@@ -1,4 +1,4 @@
-baseurl = "https://zhaohuabing.com"
+baseurl = "https://on4ulg.uliege.be"
 title = "ON4ULG"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
@@ -13,7 +13,7 @@ hasCJKLanguage = false
 home = ["HTML"]
 
 [params]
-  header_image = "img/on4ulg.png"
+  header_image = "img/on4ulg.jpg"
   SEOTitle = "ON4ULG - Club Radioamateur de l'Université de Liège"
   description = "Site du Club Radioamateur de l'Université de Liège"
   keyword = "ULiège, ULg, ON4ULG, radio, radioamateur, hamradio, SDR"
