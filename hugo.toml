@@ -35,7 +35,7 @@ home = ["HTML"]
   algolia_apiKey = ""
 
   # Sidebar settings
-  sidebar_about_description = "Software Developer, Open Source Enthusiast and Life Adventurer"
+  #sidebar_about_description = "Software Developer, Open Source Enthusiast and Life Adventurer"
   #sidebar_avatar = "img/avatar-zhaohuabing.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
   featured_tags = true 
@@ -53,12 +53,8 @@ home = ["HTML"]
   # Follow https://twikoo.js.org/ to set up your own env_id
   twikoo_env_id = ""
 
-  #Enable wechat pay & alipay to allow readers send reward money if they like the articles 
-  reward = false 
-  # reward_guide = "如果这篇文章对你有用,请随意打赏" 
-
   friends = false
-  bookmarks = false
+  bookmarks = true
   about_me = false
 
   # Include any custom CSS and/or JS files, url or relative to /static folder
@@ -66,16 +62,16 @@ home = ["HTML"]
   #custom_js = ["js/lightbox.js", "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js", "js/main.js"]
 
   [params.social]
-  #rss            = true 
-  #email          = "youremail@gmail.com"
+  #rss           = true 
+  #email         = "youremail@gmail.com"
   #facebook      = "full profile url in facebook"
   #googleplus    = "full profile url in googleplus"
   #twitter       = "full profile url in twitter"
-  #linkedin       = "https://www.linkedin.com/in/yourlinkedinid"
-  #stackoverflow  = "https://stackoverflow.com/users/yourstackoverflowid"
+  #linkedin      = "https://www.linkedin.com/in/yourlinkedinid"
+  #stackoverflow = "https://stackoverflow.com/users/yourstackoverflowid"
   #instagram     = "full profile url in instagram"
-  #github         = "https://github.com/yourgithub"
-  #wechat         = "your wechat qr code image"
+  github         = "https://github.com/on4ulg"
+  #wechat        = "your wechat qr code image"
   #medium        = "full profile url in medium"
   #slack         = "full workspace url in slack"
   #pinterest     = "full profile url in pinterest"
@@ -85,8 +81,20 @@ home = ["HTML"]
   #keybase       = "full profile url in keybase"
   #xing          = "https://www.xing.com/profile/yourxingid"
   #git           = "full profile url for git user"
-  
-  
+  matrix         = "https://matrix.to/#/#ON4ULG-space-1:matrix.org?via=matrix.org"
+
+  [[params.bookmark_link]]
+  title = "ON0ULG DStar Repeater"
+  href = "https://www.dstarusers.org/viewrepeater.php?system=ON0ULG"
+
+  [[params.bookmark_link]]
+  title = "SDR++"
+  href = "https://sdrpp.org/"
+
+  [[params.bookmark_link]]
+  title = "ULiège"
+  href = "https://uliege.be/"
+
 [languages]
   [languages.fr]
     disabled = false
