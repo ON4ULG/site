@@ -13,58 +13,14 @@ defaultContentLanguageInSubdir = true
 [outputs]
 home = ["HTML"]
 
-[languages]
-  [languages.fr]
-    disabled = false
-    languageCode = 'fr-BE'
-    languageDirection = 'ltr'
-    languageName = 'Français'
-    weight = 10
-    [languages.fr.params]
-    postsTitle = "Tous les posts"
 
-    [[languages.fr.params.addtional_menus]]
-    title =  "Membres"
-    href =  "/members/"
-
-    [[languages.fr.params.addtional_menus]]
-    title =  "À propos"
-    href =  "/about/"
-
-    [[languages.fr.params.addtional_menus]]
-      title = "English"
-      href = "../en"
-
-  [languages.en]
-    disabled = false
-    languageCode = 'en-US'
-    languageDirection = 'ltr'
-    languageName = 'English'
-    weight = 20
-    
-    [[languages.en.params.addtional_menus]]
-    title =  "Members"
-    href =  "/members/"
-
-    [[languages.en.params.addtional_menus]]
-    title =  "About"
-    href =  "/about/"
-
-    [[languages.en.params.addtional_menus]]
-      title = "Français"
-      href = "../fr"
-
-[outputFormats.Algolia]
 [params]
   header_image = "img/on4ulg.jpg"
-  SEOTitle = "ON4ULG - Club Radioamateur de l'Université de Liège"
-  description = "Site du Club Radioamateur de l'Université de Liège"
   keyword = "ULiège, ULg, ON4ULG, radio, radioamateur, hamradio, SDR"
-  slogan = "Club Radioamateur de l'Université de Liège"
+
   upstreamAttribution = true
 
   image_404 = "img/b9.png"
-  title_404 = "La page que vous cherchez n'existe pas!"
   omit_categories = false
 
   # leancloud storage for page view counter
@@ -130,6 +86,60 @@ home = ["HTML"]
   #xing          = "https://www.xing.com/profile/yourxingid"
   #git           = "full profile url for git user"
   
+  
+[languages]
+  [languages.fr]
+    disabled = false
+    languageCode = 'fr-BE'
+    languageDirection = 'ltr'
+    languageName = 'Français'
+    weight = 10
+
+    [languages.fr.params]
+      postsTitle = "Tous les posts"
+      SEOTitle = "Club Radioamateur de l'ULiège"
+      description = "Site du Club Radioamateur de l'Université de Liège"
+      slogan = "Club Radioamateur de l'Université de Liège"
+      title_404 = "La page que vous cherchez n'existe pas !"
+
+    [[languages.fr.params.addtional_menus]]
+      title =  "Membres"
+      href =  "/members/"
+
+    [[languages.fr.params.addtional_menus]]
+      title =  "À propos"
+      href =  "/about/"
+
+    [[languages.fr.params.addtional_menus]]
+      title = "English"
+      href = "../en"
+
+  [languages.en]
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    weight = 20
+
+    [languages.en.params]
+      SEOTitle = "ULiège's Amateur radio club"
+      description = "Website of the Amateur radio club of the University of Liège"
+      slogan = "Amateur Radio Club of the University of Liège"
+      title_404 = "The page you are looking for does not exist!" 
+
+    [[languages.en.params.addtional_menus]]
+      title =  "Members"
+      href =  "/members/"
+
+    [[languages.en.params.addtional_menus]]
+      title =  "About"
+      href =  "/about/"
+
+    [[languages.en.params.addtional_menus]]
+      title = "Français"
+      href = "../fr"
+
+[outputFormats.Algolia]
 baseName = "algolia"
 isPlainText = true
 mediaType = "application/json"
