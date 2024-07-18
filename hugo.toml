@@ -1,27 +1,26 @@
-baseurl = "https://zhaohuabing.com"
+baseurl = "https://on4ulg.uliege.be"
 title = "ON4ULG"
 theme = "hugo-theme-cleanwhite"
-languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
 #disqusShortname = ""
 #googleAnalytics = ""
-preserveTaxonomyNames = true
+#preserveTaxonomyNames = true
 paginate = 5 #frontpage pagination
 hasCJKLanguage = false
+defaultContentLanguage = 'fr'
+defaultContentLanguageInSubdir = true
 
 [outputs]
 home = ["HTML"]
 
+
 [params]
-  header_image = "img/on4ulg.png"
-  SEOTitle = "ON4ULG - Club Radioamateur de l'Université de Liège"
-  description = "Site du Club Radioamateur de l'Université de Liège"
+  header_image = "img/on4ulg.jpg"
   keyword = "ULiège, ULg, ON4ULG, radio, radioamateur, hamradio, SDR"
-  slogan = "Club Radioamateur de l'Université de Liège"
+
   upstreamAttribution = true
 
   image_404 = "img/b9.png"
-  title_404 = "La page que vous cherchez n'existe pas!"
   omit_categories = false
 
   # leancloud storage for page view counter
@@ -36,9 +35,8 @@ home = ["HTML"]
   algolia_apiKey = ""
 
   # Sidebar settings
-  sidebar_about_description = "Software Developer, Open Source Enthusiast and Life Adventurer"
+  #sidebar_about_description = "Software Developer, Open Source Enthusiast and Life Adventurer"
   #sidebar_avatar = "img/avatar-zhaohuabing.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
-  sidebar_avatar = "img/zhaohuabing.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
   featured_tags = true 
   featured_condition_size = 1 
@@ -55,12 +53,8 @@ home = ["HTML"]
   # Follow https://twikoo.js.org/ to set up your own env_id
   twikoo_env_id = ""
 
-  #Enable wechat pay & alipay to allow readers send reward money if they like the articles 
-  reward = false 
-  # reward_guide = "如果这篇文章对你有用,请随意打赏" 
-
   friends = false
-  bookmarks = false
+  bookmarks = true
   about_me = false
 
   # Include any custom CSS and/or JS files, url or relative to /static folder
@@ -68,16 +62,16 @@ home = ["HTML"]
   #custom_js = ["js/lightbox.js", "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js", "js/main.js"]
 
   [params.social]
-  #rss            = true 
-  #email          = "youremail@gmail.com"
+  #rss           = true 
+  #email         = "youremail@gmail.com"
   #facebook      = "full profile url in facebook"
   #googleplus    = "full profile url in googleplus"
   #twitter       = "full profile url in twitter"
-  #linkedin       = "https://www.linkedin.com/in/yourlinkedinid"
-  #stackoverflow  = "https://stackoverflow.com/users/yourstackoverflowid"
+  #linkedin      = "https://www.linkedin.com/in/yourlinkedinid"
+  #stackoverflow = "https://stackoverflow.com/users/yourstackoverflowid"
   #instagram     = "full profile url in instagram"
-  #github         = "https://github.com/yourgithub"
-  #wechat         = "your wechat qr code image"
+  github         = "https://github.com/on4ulg"
+  #wechat        = "your wechat qr code image"
   #medium        = "full profile url in medium"
   #slack         = "full workspace url in slack"
   #pinterest     = "full profile url in pinterest"
@@ -87,14 +81,71 @@ home = ["HTML"]
   #keybase       = "full profile url in keybase"
   #xing          = "https://www.xing.com/profile/yourxingid"
   #git           = "full profile url for git user"
-  
-  [[params.addtional_menus]]
-  title =  "MEMBRES"
-  href =  "/members/"
+  matrix         = "https://matrix.to/#/#ON4ULG-space-1:matrix.org?via=matrix.org"
 
-  [[params.addtional_menus]]
-  title =  "À PROPOS"
-  href =  "/about/"
+  [[params.bookmark_link]]
+  title = "ON0ULG DStar Repeater"
+  href = "https://www.dstarusers.org/viewrepeater.php?system=ON0ULG"
+
+  [[params.bookmark_link]]
+  title = "SDR++"
+  href = "https://sdrpp.org/"
+
+  [[params.bookmark_link]]
+  title = "ULiège"
+  href = "https://uliege.be/"
+
+[languages]
+  [languages.fr]
+    disabled = false
+    languageCode = 'fr-BE'
+    languageDirection = 'ltr'
+    languageName = 'Français'
+    weight = 10
+
+    [languages.fr.params]
+      postsTitle = "Tous les posts"
+      SEOTitle = "Club Radioamateur de l'ULiège"
+      description = "Site du Club Radioamateur de l'Université de Liège"
+      slogan = "Club Radioamateur de l'Université de Liège"
+      title_404 = "La page que vous cherchez n'existe pas !"
+
+    [[languages.fr.params.addtional_menus]]
+      title =  "Membres"
+      href =  "/members/"
+
+    [[languages.fr.params.addtional_menus]]
+      title =  "À propos"
+      href =  "/about/"
+
+    [[languages.fr.params.addtional_menus]]
+      title = "English"
+      href = "../en"
+
+  [languages.en]
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    weight = 20
+
+    [languages.en.params]
+      SEOTitle = "ULiège's Amateur radio club"
+      description = "Website of the Amateur radio club of the University of Liège"
+      slogan = "Amateur Radio Club of the University of Liège"
+      title_404 = "The page you are looking for does not exist!" 
+
+    [[languages.en.params.addtional_menus]]
+      title =  "Members"
+      href =  "/members/"
+
+    [[languages.en.params.addtional_menus]]
+      title =  "About"
+      href =  "/about/"
+
+    [[languages.en.params.addtional_menus]]
+      title = "Français"
+      href = "../fr"
 
 [outputFormats.Algolia]
 baseName = "algolia"
