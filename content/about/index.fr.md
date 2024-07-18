@@ -12,4 +12,5 @@ Une station satellite et un relais DStar sont également installée dans le [bâ
 Le club est ouvert à tous les membres de la communauté universitaire quel que soit leur statut ou leur domaine d'étude. 
 
 ### Contact
+
 Pour toutes personnes intéressées de rejoindre le club et pour toutes demandes de contact, pouvez envoyer un mail à [Morgan Diepart](https://www.uliege.be/cms/c_9054334/fr/repertoire?uid=u227522).
